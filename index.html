@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>My Favourite Hobby - Home</title>
+  <style>
+    body{font-family: Arial, Helvetica, sans-serif; background:#0b0f1a;color:#eef2ff;margin:0;padding:0}
+    header{background:#071133;padding:20px 16px;text-align:center}
+    .container{max-width:900px;margin:20px auto;padding:18px;background:rgba(255,255,255,0.03);border-radius:8px}
+    nav a{color:#9fd3ff;margin:0 10px;text-decoration:none}
+    .hero{display:flex;gap:18px;align-items:center}
+    .hero img{width:240px;height:160px;object-fit:cover;border-radius:8px;border:2px solid #fff}
+    .card{background:rgba(255,255,255,0.02);padding:12px;border-radius:6px}
+    footer{font-size:13px;text-align:center;padding:14px;color:#9aa7c7}
+    .inline{display:inline-block}
+    .highlight mark{background:#ffd54f;color:#000}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>My Favourite Hobby: Photography <sup>™</sup></h1>
+    <marquee behavior="scroll" direction="left" scrollamount="5">Capture moments • Tell stories • Learn every day</marquee>
+  </header>
+
+  <div class="container">
+    <nav>
+      <a href="index.html">Home</a> |
+      <a href="details.html">Details &amp; Sign-up</a>
+    </nav>
+
+    <section class="hero">
+      <!-- Embedded SVG as a data URI used in <img> to avoid external file dependencies -->
+      <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='480' height='320'><rect width='100%' height='100%' fill='%2308122a'/><g transform='translate(40,40)'><circle r='60' cx='80' cy='60' fill='%23ffd54f'/><rect x='150' y='30' width='140' height='80' rx='10' fill='%23ffffff' opacity='0.08'/><text x='160' y='75' font-size='18' fill='%23ffffff' font-family='Arial'>Photography</text></g></svg>" alt="Camera illustration">
+
+      <div>
+        <h2>Why I love photography</h2>
+        <p class="card">Photography lets me <span class="highlight"><mark>freeze a moment</mark></span> and share how I see the world. It combines technical skills like exposure and composition with creativity.</p>
+
+        <h3>Quick facts</h3>
+        <ul>
+          <li>Hobby since: <b>2018</b></li>
+          <li>Favourite subject: Landscapes &amp; street-life</li>
+          <li>Tools: Camera, tripod, editing software</li>
+        </ul>
+      </div>
+    </section>
+
+    <hr>
+
+    <section>
+      <h3>Steps to improve</h3>
+      <ol>
+        <li>Learn camera settings (ISO, aperture, shutter speed).</li>
+        <li>Practice composition: rule of thirds, leading lines.</li>
+        <li>Review and edit photos; get feedback.</li>
+      </ol>
+
+      <div class="card">
+        <p>Want more details or to join a small practice group? <a href="details.html">Sign up on the Details page</a>.</p>
+        <p>Small note: Digital photography has <span>pixels</span> and sometimes <span><sub>post</sub></span>-processing.</p>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <p>Created by <u>Yuvraj Khera</u> — Grade 10 project. <span style="font-style:italic">Good luck!</span></p>
+  </footer>
+</body>
+</html>
+
+
+<!-- ========================= details.html ========================= -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Photography - Details</title>
+  <style>
+    body{font-family: Arial, Helvetica, sans-serif;background:#071133;color:#f0f7ff;margin:0;padding:0}
+    .wrap{max-width:1000px;margin:18px auto;padding:20px}
+    header{padding:12px 0;text-align:center}
+    form{background:rgba(255,255,255,0.02);padding:14px;border-radius:8px}
+    label{display:block;margin:8px 0 4px}
+    input[type=text], input[type=email], select, textarea{width:100%;padding:8px;border-radius:4px;border:1px solid #304a6a;background:transparent;color:#fff}
+    .inline{display:inline-block;margin-right:10px}
+    table{width:100%;border-collapse:collapse;margin-top:12px}
+    th,td{border:1px solid #12314a;padding:8px;text-align:left}
+    .btn{padding:10px 14px;border-radius:6px;border:none;cursor:pointer;margin-top:10px}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Photography - Details &amp; Signup</h1>
+      <nav><a href="index.html">⬅ Back to Home</a></nav>
+    </header>
+
+    <section>
+      <h2>Join a practice session</h2>
+      <form action="#" method="post">
+        <div>
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your full name" required>
+        </div>
+
+        <div>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required>
+        </div>
+
+        <div>
+          <label for="type">Photography type</label>
+          <select id="type" name="type">
+            <option value="landscape">Landscape</option>
+            <option value="portrait">Portrait</option>
+            <option value="street">Street</option>
+            <option value="wildlife">Wildlife</option>
+          </select>
+        </div>
+
+        <div>
+          <label>Experience level</label>
+          <span class="inline"><input type="radio" id="beginner" name="level" value="beginner" checked><label for="beginner"> Beginner</label></span>
+          <span class="inline"><input type="radio" id="intermediate" name="level" value="intermediate"><label for="intermediate"> Intermediate</label></span>
+          <span class="inline"><input type="radio" id="pro" name="level" value="pro"><label for="pro"> Pro</label></span>
+        </div>
+
+        <div>
+          <label>Interests (pick any)</label>
+          <label><input type="checkbox" name="interest" value="editing"> Editing</label>
+          <label><input type="checkbox" name="interest" value="printing"> Printing</label>
+          <label><input type="checkbox" name="interest" value="travel"> Travel shoots</label>
+        </div>
+
+        <div>
+          <label for="message">Message / Notes</label>
+          <textarea id="message" name="message" rows="4" placeholder="Anything you'd like us to know..."></textarea>
+        </div>
+
+        <div>
+          <button class="btn" type="submit">Submit</button>
+          <button class="btn" type="reset">Reset</button>
+        </div>
+      </form>
+    </section>
+
+    <section>
+      <h2>Comparison Table: Photography Types</h2>
+      <table>
+        <tr>
+          <th>Type</th>
+          <th>Typical Gear</th>
+          <th>Skills Required</th>
+        </tr>
+        <tr>
+          <td>Landscape</td>
+          <td>DSLR/Mirrorless, tripod, wide lens</td>
+          <td>Composition, exposure control, patience</td>
+        </tr>
+        <tr>
+          <td>Portrait</td>
+          <td>Prime lens, reflector, softbox</td>
+          <td>Posing, communication, lighting</td>
+        </tr>
+        <tr>
+          <td>Street</td>
+          <td>Compact camera, fast prime</td>
+          <td>Timing, observation, quick settings</td>
+        </tr>
+      </table>
+
+      <p>Note: The table above shows rows and columns as required. Use the <span><b>&lt;table&gt;</b></span>, <span><b>&lt;tr&gt;</b></span> and <span><b>&lt;td&gt;</b></span> tags.</p>
+
+      <hr>
+      <p>Small footer info: Project created with HTML tags like <span><sub>sub</sub></span> and <span><sup>sup</sup></span> as examples. <mark>Good job!</mark></p>
+    </section>
+
+    <footer style="margin-top:18px;color:#9fb8d6;text-align:center">
+      <p>Back to <a href="index.html">Home</a> | Project by <u>Yuvraj Khera</u></p>
+    </footer>
+  </div>
+</body>
+</html>
